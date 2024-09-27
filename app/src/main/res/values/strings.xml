@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SkillGuru</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_up">Sign up</string>
+    <string name="apple_image">Apple Image</string>
+    <string name="google_image">Google Image</string>
+    <string name="linkedin_image">LinkedIn Image</string>
+    <string name="create_password">Create password</string>
+    <string name="your_full_name">Your full name</string>
+    <string name="back_icon">Back Icon</string>
+    <string name="next">Next</string>
+    <string name="checkbox">checkbox</string>
+    <string name="web_client_id">131031256129-5etn5nb6n4c5l2f1lav81d11c5kqjrnu.apps.googleusercontent.com</string>
+    <string name="spinner_title">Select Guru</string>
+    <string name="type_your_question">Type Your question</string>
+</resources>

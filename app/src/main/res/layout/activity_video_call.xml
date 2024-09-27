@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/guruNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Guru Name" />
+    <TextView
+        android:id="@+id/callerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="56dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Caller Name" />
+
+    <FrameLayout
+        android:id="@+id/local_video_view_container"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.herewhite.sdk.WhiteboardView
+        android:id="@+id/whiteboard_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/call_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/JoinButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circular_button"
+            android:onClick="joinChannel"
+            android:src="@android:drawable/ic_menu_camera"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_toggle_audio"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circular_button"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_toggle_video"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circular_button"
+            android:src="@drawable/ic_video_on"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_toggle_whiteboard"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circular_button"
+            android:src="@android:drawable/ic_menu_edit"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/LeaveButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circular_button_red"
+            android:onClick="leaveChannel"
+            android:src="@drawable/ic_end_call"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/whiteboard_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#80000000"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_pen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/tool_button_selector"
+                    android:src="@android:drawable/ic_menu_edit"
+                    app:tint="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn_eraser"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/tool_button_selector"
+                    android:src="@android:drawable/ic_menu_delete"
+                    app:tint="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn_text"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/tool_button_selector"
+                    android:src="@android:drawable/ic_menu_sort_alphabetically"
+                    app:tint="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn_rectangle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/tool_button_selector"
+                    android:src="@android:drawable/ic_menu_crop"
+                    app:tint="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn_ellipse"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/tool_button_selector"
+                    android:src="@android:drawable/ic_menu_compass"
+                    app:tint="@android:color/white" />
+            </LinearLayout>
+
+            <com.larswerkman.holocolorpicker.ColorPicker
+                android:id="@+id/color_picker"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp" />
+
+            <SeekBar
+                android:id="@+id/stroke_width_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:max="20"
+                android:progress="4" />
+
+            <Button
+                android:id="@+id/btn_clear_whiteboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Clear Whiteboard" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

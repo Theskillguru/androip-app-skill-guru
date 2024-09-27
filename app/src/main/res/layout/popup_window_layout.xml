@@ -1,0 +1,31 @@
+<!-- res/layout/popup_window_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+   >
+
+    <EditText
+        android:id="@+id/filterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="3dp"
+        android:hint="Text input"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:paddingHorizontal="15dp"
+        android:textSize="19dp"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ListView
+        android:id="@+id/optionsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:elevation="6dp" />
+</LinearLayout>

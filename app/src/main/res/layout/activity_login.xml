@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints=""
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:id="@+id/main"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@color/charcoal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_variable"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Subheading Text -->
+    <TextView
+        android:id="@+id/tvSubHeading"
+        android:layout_width="wrap_content"
+        android:textColor="@color/charcoal"
+        android:fontFamily="@font/inter_variable"
+        android:layout_height="wrap_content"
+        android:text="Unlock Potential or Share Wisdom"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+
+
+    <!-- Full Name Input -->
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/txtbackground"
+        android:hint="@string/your_full_name"
+        android:inputType="textPersonName"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:paddingHorizontal="20dp"
+        android:textSize="18dp"
+        tools:ignore="SpUsage,TextContrastCheck,TouchTargetSizeCheck,TextSizeCheck,TextSizeCheck,TextSizeCheck" />
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="@drawable/dividerbackground"/>
+
+    <!-- Email Address Input -->
+    <EditText
+        android:id="@+id/Email_edittext"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:background="@drawable/txtbackground"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:paddingHorizontal="20sp"
+        android:textSize="18dp"
+        tools:ignore="SpUsage,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="@drawable/dividerbackground"/>
+
+    <!-- Password Input -->
+
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:background="@drawable/txtbackground"
+        android:drawableEnd="@drawable/hidepasstoggle"
+        android:hint="@string/create_password"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:paddingHorizontal="20sp"
+        android:paddingRight="10dp"
+        android:textSize="18dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="@drawable/dividerbackground"/>
+
+
+    <!-- Sign Up Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="SpUsage,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
+
+    <!-- Alternative Login Text -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="30sp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:background="@drawable/dividerbackground"/>
+
+        <TextView
+            android:id="@+id/tvAltLogin"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:alpha="0.4"
+            android:gravity="center"
+            android:text="or Login with"
+            android:textColor="@color/shade_black"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+        <View
+            android:layout_width="30sp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/dividerbackground"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        tools:ignore="HardcodedText">
+
+        <!-- Google Login Icon -->
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/google_image"
+            android:background="@drawable/iconbackground"
+            android:paddingVertical="20sp"
+            android:src="@drawable/googleicon"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- LinkedIn Login Icon -->
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="wrap_content"
+            android:background="@drawable/iconbackground"
+            android:contentDescription="@string/linkedin_image"
+            android:paddingVertical="17sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebookicon"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Apple Login Icon -->
+        <ImageView
+            android:id="@+id/ivApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/apple_image"
+            android:paddingVertical="20sp"
+            android:background="@drawable/iconbackground"
+            android:src="@drawable/appleicon"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/passForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="forgot password??"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:textColor="@color/red"/>
+
+
+
+</LinearLayout>

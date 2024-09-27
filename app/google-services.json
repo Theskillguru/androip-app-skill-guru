@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "131031256129",
+    "project_id": "theskillguru-d9fac",
+    "storage_bucket": "theskillguru-d9fac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131031256129:android:91867aa40503d8baabcac0",
+        "android_client_info": {
+          "package_name": "com.example.theskillguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131031256129-10o9gpiv89lggtmur3tgle77k4m6706i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.theskillguru",
+            "certificate_hash": "86a578c8d1c4f950cbbb40fa125ff22d21dde93d"
+          }
+        },
+        {
+          "client_id": "131031256129-5etn5nb6n4c5l2f1lav81d11c5kqjrnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9wQ6l4i86r4yhy8D4KrzXlATm0-bMRrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131031256129-5etn5nb6n4c5l2f1lav81d11c5kqjrnu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "131031256129-jjqhvgm6pg6279mhkdirliqrhgulomuq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rivolta.theskillguruapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

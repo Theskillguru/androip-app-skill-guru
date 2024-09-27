@@ -1,0 +1,84 @@
+[versions]
+agp = "8.5.2"
+cardview = "1.0.0"
+ccp = "2.7.3"
+converterGson = "2.9.0"
+firebaseAdmin = "9.1.1"
+firebaseBom = "33.3.0"
+firebaseMessagingKtx = "23.1.0"
+fullSdk = "4.4.1"
+googleAuthLibraryOauth2Http = "1.17.0"
+googlePlayServicesAuth = "20.6.0"
+gson = "2.10.1"
+gsonVersion = "2.9.0"
+holocolorpicker = "1.5"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinxCoroutinesAndroid = "1.6.4"
+kotlinxCoroutinesAndroidVersion = "1.8.0"
+kotlinxCoroutinesPlayServices = "1.7.3"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseAnalytics = "22.1.0"
+firebaseAuth = "23.0.0"
+firebaseFirestore = "25.1.0"
+okhttp = "4.9.0"
+playServicesAuth = "21.2.0"
+playServicesBase = "18.5.0"
+squareupOkhttp = "4.10.0"
+playServicesNearby = "19.3.0"
+uiDesktop = "1.7.0"
+firebaseFunctionsKtx = "21.0.0"
+whiteboardAndroid = "2.16.83"
+
+[libraries]
+androidx-cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+firebase-admin = { module = "com.google.firebase:firebase-admin", version.ref = "firebaseAdmin" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx", version.ref = "firebaseAuth" }
+firebase-messaging-ktx-v2310 = { module = "com.google.firebase:firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
+full-sdk = { module = "io.agora.rtc:full-sdk", version.ref = "fullSdk" }
+gms-play-services-auth-v2060 = { module = "com.google.android.gms:play-services-auth", version.ref = "googlePlayServicesAuth" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+gson-v290 = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
+holocolorpicker = { module = "com.larswerkman:HoloColorPicker", version.ref = "holocolorpicker" }
+jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android-v164 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesPlayServices" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesPlayServices" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebaseAnalytics" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+okhttp-v490 = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-base = { module = "com.google.android.gms:play-services-base", version.ref = "playServicesBase" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
+squareup-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "squareupOkhttp" }
+squareup-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "squareupOkhttp" }
+play-services-nearby = { group = "com.google.android.gms", name = "play-services-nearby", version.ref = "playServicesNearby" }
+androidx-ui-desktop = { group = "androidx.compose.ui", name = "ui-desktop", version.ref = "uiDesktop" }
+firebase-functions-ktx = { group = "com.google.firebase", name = "firebase-functions-ktx", version.ref = "firebaseFunctionsKtx" }
+whiteboard-android = { module = "com.github.netless-io:whiteboard-android", version.ref = "whiteboardAndroid" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+
